@@ -2,7 +2,6 @@ package com.lisa.demo.entities;
 
 import javax.persistence.*;
 
-import lombok.Generated;
 import lombok.Getter;
 import lombok.Setter;
 
