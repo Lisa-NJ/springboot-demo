@@ -6,3 +6,13 @@
 6. +db / migration / V1__init.sql
 7. +dependencies: org.flywaydb:flyway-core, mysql-connector-java
 8. change into db / migration, +V2__data.sql
+9. rename application.properties -> application-mysql.properties, delete com.lisa.demo - mysql version
+10. rename db / migration -> db / migration-mysql , +db / migration - V1~V4
+11. +application.properties - postgres version, +dependencies: runtimeOnly 'org.postgresql:postgresql'
+12. +com.lisa.demo - postgres version && code files,
+    +dependencies: implementation 'org.springframework.boot:spring-boot-starter-security'
+    +dependencies: implementation 'org.mapstruct:mapstruct:1.5.2.Final'
+    +dependencies: annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.2.Final'
+13. ./gradlew clean build -> demo-0.0.1-SNAPSHOT.jar, demo-0.0.1-SNAPSHOT-plain.jar 
+14. java -jar ./build/libs/demo-0.0.1-SNAPSHOT.jar
+15. +Dockerfile, Dockerfile_Dev, docker-compose.yaml, +scripts/ folder
