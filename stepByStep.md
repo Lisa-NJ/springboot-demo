@@ -17,3 +17,4 @@
 14. java -jar ./build/libs/demo-0.0.1-SNAPSHOT.jar
 15. +Dockerfile, Dockerfile_Dev, docker-compose.yaml, +scripts/ folder
 16. 'docker build . -f Dockerfile_Dev -t app' -> image 'app' is created - run 'docker images' to see
+17. +postman / demo_API.postman_collection.json
